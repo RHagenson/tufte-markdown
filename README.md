@@ -1,7 +1,7 @@
 ---
 title: Tufte Handout Sample
 author: David Peng
-date: 2019-01-31
+date: 2019-09-25
 ---
 
 # Tufte Markdown
@@ -320,7 +320,6 @@ pandoc -o ./test/common.pdf -f markdown+raw_tex --template=default.latex \
 --pdf-engine=xelatex -V graphics=true \
 -V strikeout=true -V "header-includes=\usepackage{soul}" \
 -V "header-includes=\usepackage{color}"
-
 
 # Build common HTML
 pp -html -import=./pp-macros/common.pp ./test/common.md | \

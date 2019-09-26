@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name="author" content="David Peng">
-  <meta name="dcterms.date" content="2019-01-31">
+  <meta name="dcterms.date" content="2019-09-25">
   <title>Tufte Handout Sample</title>
   <style>code{white-space: pre;}</style>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/edwardtufte/tufte-css@1.4/tufte.css">
@@ -41,7 +41,7 @@
 <header>
 <h1 class="title">Tufte Handout Sample</h1>
 <p class="author">David Peng</p>
-<p class="date">2019-01-31</p>
+<p class="date">2019-09-25</p>
 </header>
 <p>This sample text is from Dave Liepmann’s <a href="https://edwardtufte.github.io/tufte-css/">Tufte CSS</a>.</p>
 <p>Tufte CSS provides tools to style web articles using the ideas demonstrated by Edward Tufte’s books and handouts. Tufte’s style is known for its simplicity, extensive use of sidenotes, tight integration of graphics with text, and carefully chosen typography.</p>
@@ -150,7 +150,6 @@ pandoc -o ./test/common.pdf -f markdown+raw_tex --template=default.latex \
 --pdf-engine=xelatex -V graphics=true \
 -V strikeout=true -V &quot;header-includes=\usepackage{soul}&quot; \
 -V &quot;header-includes=\usepackage{color}&quot;
-
 
 # Build common HTML
 pp -html -import=./pp-macros/common.pp ./test/common.md | \
